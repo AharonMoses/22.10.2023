@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom Fullstack Course</title>
+    <style>
+        .highlight {
+            background-color: greenyellow;
+        font-size: 35px;}
+    </style>
+    
+</head>
+<body>
+
+    <h1>Aharon Moses</h1>
+
+    <p id="paragraph1">Hello my name is Aharon Moses, im 28 from herzliya</p>
+    <a href="https://www.youtube.com/"><img src="img1.png" style="height: 100px; width: 100px;"></a>
+    <br>
+    <br>
+    <p id="paragraph2">Im starting programming course so wish me the best!!</p>
+    <a href="https://www.youtube.com/"><img src="img1.png" style="height: 100px; width: 100px;"></a>
+
+    
+    <hr style="border: solid;">
+
+<footer>
+        <a href="https://media.istockphoto.com/id/1411839157/video/asian-indian-male-coach-coaching-chinese-down-syndrome-male-playing-tennis.mp4?s=mp4-640x640-is&k=20&c=qFNmUsdw170FAbukgM3Okf604xGXOY-c_exjDRrzZxY="><img src="img2.avif" style="width: 50px; height: 50px;"></a>
+              </footer>
+
+    
+
+
+              <script>
+                // Get the paragraphs
+                var paragraph1 = document.getElementById("paragraph1");
+                var paragraph2 = document.getElementById("paragraph2");
+        
+                // Remove the second to last word from each paragraph
+                var words1 = paragraph1.innerHTML.split(" ");
+                words1.splice(-2, 1);
+                paragraph1.innerHTML = words1.join(" ");
+        
+                var words2 = paragraph2.innerHTML.split(" ");
+                words2.splice(-2, 1);
+                paragraph2.innerHTML = words2.join(" ");
+        
+                // Highlight the second word in each paragraph
+                var words1WithHighlight = words1;
+                words1WithHighlight[1] = "<span class='highlight'>" + words1WithHighlight[1] + "</span>";
+                paragraph1.innerHTML = words1WithHighlight.join(" ");
+        
+                var words2WithHighlight = words2;
+                words2WithHighlight[1] = "<span class='highlight'>" + words2WithHighlight[1] + "</span>";
+                paragraph2.innerHTML = words2WithHighlight.join(" ");
+            </script>
+
+
+</body>
+</html>
